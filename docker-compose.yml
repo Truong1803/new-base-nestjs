@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  posgres:
+    image: postgres:15.4
+    container_name: postgres_shopology
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: H4KhV5YwD7ATbKVw
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - '5432:5432'
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres:
+  elasticsearch:
+  typesense:

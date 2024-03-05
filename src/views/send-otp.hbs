@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+        body {
+            background-color: #acacac;
+            font-family: "Jost";
+        }
+
+        .card {
+            font-family: 'Jost', sans-serif !important;
+            padding: 50px 60px;
+            background-color: #f8f8f8;
+            display: block;
+        }
+
+        .card_top {
+            border-bottom: 1px solid #dddddd;
+            width: 100%;
+            margin-bottom: 49px;
+            padding-bottom: 13px;
+        }
+
+        .card_top img {
+            width: 65px;
+            height: 29px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 110%;
+            color: #1e2029;
+            margin-bottom: 11px;
+            width: 100%;
+        }
+
+        .text {
+            width: 100%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #1e2029;
+            margin-bottom: 22px;
+        }
+
+        .code {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 130%;
+            text-align: center;
+            color: #1e2029;
+        }
+
+        @media only screen and (max-width: 475px) {
+            .card {
+                border-radius: 0px;
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card_top">
+            <img src="https://adamosoft.com/img/logo.png" alt="Logo.png" />
+        </div>
+        <div class="highlight">Your verification code</div>
+        <div class="text">Below is your verification code:</div>
+        <div class="code">{{otp}}</div>
+    </div>
+</body>
+
+</html>
